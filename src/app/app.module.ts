@@ -9,6 +9,11 @@ import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { HttpClientModule}  from '@angular/common/http';
+import { ProfileComponent } from './profile/profile.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,12 +21,17 @@ import { MenuComponent } from './menu/menu.component';
     BookTableComponent,
     AboutComponent,
     ContactUsComponent,
-    MenuComponent
+    MenuComponent,
+    LoginComponent,
+    SignupComponent,
+    ProfileComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
